@@ -1,0 +1,132 @@
+<!doctype html> 
+<html class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css"> 
+  <link rel="stylesheet" href="css/style.css"><!-- css -->
+</head>
+<body>
+  <header role="banner">
+    <div id="cd-logo">
+      <a href="http://www.zhiwoo.com.cn" target="_blank"><img src="images/logo.png" alt="Logo"/><span id="cd-text">咨我</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <!-- inser more links here -->
+        <li><a class="in cd-signin" href="#0">登 录</a></li>
+        <li><a class="in cd-signup" href="javascript: void(0)" style="cursor:not-allowed">注 册</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="#0">登录</a></li>
+        <li><a href="#0" style="cursor:no-drop">注册</a></li>
+      </ul>
+
+      <div id="cd-login"> <!-- log in form -->
+        <form id='form1' class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signin-email">用户名</label>
+            <input name='user' class="full-width has-padding has-border" id="signin-email" type="text" placeholder="用户名" value="">
+            <span class="cd-error-message">用户名不正确！</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signin-password">密码</label>
+            <input name='pswd' class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="密码" value="">
+            <a href="#0" class="hide-password">隐藏</a>
+            <span class="cd-error-message">密码不正确！</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">记住status</label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Login Chat">
+          </p>
+        </form>
+        
+        <p class="cd-form-bottom-message"><a href="#0" style="cursor:no-drop">忘记密码?</a></p>
+        <a href="#0" class="cd-close-form">关掉</a>
+      </div> <!-- cd-login -->
+
+      <div id="cd-signup"> <!-- sign up form -->
+        <form id='form2' class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">用户名</label>
+            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="用户名">
+            <span class="cd-error-message">用户名不合法！</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">邮箱</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="邮箱">
+            <span class="cd-error-message">邮箱不合法！</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">密码</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="密码">
+            <a href="#0" class="hide-password">隐藏</a>
+            <span class="cd-error-message">密码不合法！</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">我同意这个 <a href="#0">条款</a></label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <div id="cd-reset-password"> <!-- reset password form -->
+        <p class="cd-form-message">如果丢失账号，可以来找回！</p>
+
+        <form id='form3' class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="reset-email">邮箱</label>
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="邮箱">
+            <span class="cd-error-message">邮箱不正确！</span>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">返回到登录</a></p>
+      </div> <!-- cd-reset-password -->
+      <a href="#0" class="cd-close-form">关掉</a>
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
+  <div class="cd-user-showBg">
+    <div id="bg" style="display:none">
+      <div id="bar"></div>
+    </div>
+    <footer class='footer'>
+        <p>
+          Copyright 2016 ZERO
+          <span>粤ICP备15060237号-1 广州炯源网络科技有限公司</span>
+        </p>
+    </footer>
+  </div>
+  
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <script src="js/main.js"></script> <!-- Gem style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script>
+    var rot = bgM();
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  pool: 20
+  encoding: unicode
+  timeout: 5000
+
+development: &development
+  <<: *default
+  host: /home/deploy/data/pg
+  database: learn_pg
+
+test:
+  <<: *default
+
+production:
+  <<: *development
+  host: 192.168.100.200
+  username: zero
+  password: ridezjndprs
+  port: 5432
+  database: zero_dev

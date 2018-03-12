@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="zero" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS widget -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/> 
+  <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+	<link rel="stylesheet" type="text/css" href="./css/RongIMWidget.css"/>
+    <script>
+    window["SCHEMETYPE"] = "http";
+    if(navigator.userAgent.indexOf("MSIE 9")!=-1){
+      window.WEB_XHR_POLLING = true;
+    }
+    </script> <!-- Gem style -->
+</head>
+<body scroll="no">
+	<header role="banner">
+		<div id="cd-logo">
+			<a href="#0"><img src="images/logo.png" alt="Logo"/><span id="cd-text">咨我聊天网页版</span></a>
+		</div>
+		<nav class="main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a class="in cd-signout" href="javascript:void(0)" style="">退 出</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div name='talking' id="chating" class="chat-talk" ng-controller="main" style="display:none">
+	    <div id="menus">
+		    <h1>{{title}}<audio class="audio-tag" src="">您的浏览器不支持H5</audio></h1>
+        <div class="chat-button"> 
+          <button class="showToggle" ng-click="setconversation()">显示面板</button>
+          <button class="showReturn">返回列表</button><br/><br/>
+          <input type="search" value="" style="width:190px;background:#ffccff;margin-top:6px;" placeholder='输入用户昵称'>
+          <button class="talkSearch">查找</button>
+        </div>
+        <ul id="chat-list"></ul>
+	    </div>
+	    <div id="chat" >  
+	      <!-- <rong-conversation style=""></rong-conversation> -->
+	      <rong-widget></rong-widget>
+	    </div>
+	</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./appdata/app.js"></script>
+<!-- widget jQuery -->
+<script src="./js/angular.js"></script>
+<script src="./js/RongIMWidget.full.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+
+</script>
+<!-- <script src="http://cdn.ronghub.com/RongUploadLib-2.2.2.min.js"></script> -->
+</body>
+</html>
