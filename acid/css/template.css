@@ -1,0 +1,10 @@
+@import url(bootstrap.min.css);
+@import url(wx.css);
+
+@media only screen and (orientation: portrait) {
+	/*@import 'index.css';*/
+}
+
+@media screen and (orientation: landscape) {
+	/*@import 'index.css';*/
+}

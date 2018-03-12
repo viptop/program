@@ -1,0 +1,359 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+.modify{
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1024px;
+	height: 768px;
+	background: rgb(240,242,246);
+}
+.modify-top{
+	position: relative;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	width: 100%;
+	height: 80px;
+	background:rgb(84,111,165);
+	line-height: 80px;
+	color: white;
+	text-align: center;
+}
+.modify-top img{
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	width: 20px;
+	height: 30px;
+}
+input{
+    outline:medium;
+}
+.centent{
+	border-top: 1px solid silver;
+	width: 100%;
+	height: 306px;
+	background: white;
+}
+.centent ul{
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+}
+.centent ul li {
+	position: relative;
+	font: "微软雅黑";
+	font-size: 18px;
+	/*font-weight: bold;*/
+	color: #626262;
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+#check_1{
+	display: none;
+	color: red;
+	text-align: center;
+}
+
+.text1{
+	position: absolute;
+	font-size: 17px;
+	width: 82%;
+	height: 40px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+	-webkit-input-placeholder{color: #F2F2F2;}
+}
+.text2{
+	position: absolute;
+	font-size: 17px;
+	width: 82%;
+	height: 40px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text3{
+	position: absolute;
+	font-size: 17px;
+	width: 82%;
+	height: 40px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text4{
+	position: absolute;
+	font-size: 17px;
+	width: 82%;
+	height: 40px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text5{
+	position: absolute;
+	font-size: 17px;
+	width: 82%;
+	height: 40px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.span{
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+}
+.Prompt{
+	display: none;
+	width:300px;
+	height:200px;
+	border-radius: 12px;
+	background: white;
+	position: fixed;
+	z-index: 1003;
+	left: 50%;
+	top:50%;
+	margin-left: -150px;
+	margin-top: -100px;
+	opacity: 0.9;
+}
+.zhezao{
+	display: none;
+	width: 1024px;
+	height: 980px;
+	position: fixed;
+	z-index: 1002;
+	top: 0;
+	left: 0;
+	filter:alpha(opacity=60) ;
+	background: #777;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+}
+.top{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background:url(../img/cussess.png) 110px 30px no-repeat;
+	width: 100%;
+	height: 130px;
+	color:#338efe;
+	line-height: 130px;
+	border-bottom: 1px solid silver;
+	
+}
+.buttom{
+	font-size: 22px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: #338efe;
+}
+.buttom a{
+	text-decoration: none;
+	color: #338efe;
+}
+@media only screen and (min-width: 100px) and (max-width: 450px) {
+.modify-top{
+	position: relative;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	width: 100%;
+	height: 50px;
+	background:rgb(84,111,165);
+	line-height: 50px;
+	color: white;
+	text-align: center;
+}
+.Prompt{
+	display: none;
+	width:200px;
+	height:150px;
+	border-radius: 12px;
+	background: white;
+	position: fixed;
+	z-index: 1003;
+	left: 50%;
+	top:50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	opacity: 0.9;
+}
+.zhezao{
+	display: none;
+	width: 1024px;
+	height: 1300px;
+	position: fixed;
+	z-index: 1002;
+	top: 0;
+	left: 0;
+	filter:alpha(opacity=60) ;
+	background: #777;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+}
+.top{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background:url(../img/cussess.png) 60px 10px no-repeat;
+	width: 100%;
+	height: 98px;
+	color:#338efe;
+	line-height: 100px;
+	border-bottom: 1px solid silver;
+	
+}
+.buttom{
+	font-size: 22px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #338efe;
+}
+.buttom a{
+	text-decoration: none;
+	color: #338efe;
+}
+.modify-top img{
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 15px;
+	height: 25px;
+}
+}
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+.modify-top{
+	position: relative;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	width: 100%;
+	height: 50px;
+	background:rgb(84,111,165);
+	line-height: 50px;
+	color: white;
+	text-align: center;
+}
+.modify-top img{
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 15px;
+	height: 25px;
+}
+.text1{
+	position: absolute;
+	font-size: 17px;
+	width: 78%;
+	height: 30px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+	-webkit-input-placeholder{color: #F2F2F2;}
+}
+.text2{
+	position: absolute;
+	font-size: 17px;
+	width: 78%;
+	height: 30px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text3{
+	position: absolute;
+	font-size: 17px;
+	width: 78%;
+	height: 30px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text4{
+	position: absolute;
+	font-size: 17px;
+	width: 78%;
+	height: 30px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+.text5{
+	position: absolute;
+	font-size: 17px;
+	width: 78%;
+	height: 30px;
+	border: 0;
+	top: 3.5px;
+	left: 60px;
+}
+input{
+    outline:medium;
+}
+html{
+	margin: 0;
+	padding: 0;
+}
+.Prompt{
+	display: none;
+	width:300px;
+	height:200px;
+	border-radius: 12px;
+	background: white;
+	position: fixed;
+	z-index: 1003;
+	left: 50%;
+	top:50%;
+	margin-left: -150px;
+	margin-top: -100px;
+	opacity: 0.9;
+}
+.zhezao{
+	display: none;
+	width: 1024px;
+	height: 1300px;
+	position: fixed;
+	z-index: 1002;
+	top: 0;
+	left: 150px;
+	filter:alpha(opacity=60) ;
+	background: #777;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+}
+.top{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background:url(../img/cussess.png) 110px 30px no-repeat;
+	width: 100%;
+	height: 130px;
+	color:#338efe;
+	line-height: 130px;
+	border-bottom: 1px solid silver;
+	
+}
+.buttom{
+	font-size: 22px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: #338efe;
+}
+.buttom a{
+	text-decoration: none;
+	color: #338efe;
+}
+}
